@@ -5,7 +5,7 @@ const Formulario = () => {
 
         <p className="text-lg mt-5 mb-10 text-center">
           Añade Pacientes y {''} 
-          <span className="text-indigo-600 font-bold">Administralos</span>
+          <span className="text-indigo-600 font-bold">Adminístralos</span>
         </p>
 
         <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
@@ -68,7 +68,7 @@ const Formulario = () => {
                 <textarea 
                     className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md" 
                     id="sintomas" 
-                    placeholder="Describe los sintomas"
+                    placeholder="Describe los síntomas"
                 />
                 
               </div>
