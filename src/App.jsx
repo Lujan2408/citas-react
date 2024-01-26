@@ -17,7 +17,9 @@ function App() {
           pacientes={pacientes} //Esto es una prop 
           setPacientes={setPacientes} //Esto es una prop
         />
-        <ListadoPacientes />
+        <ListadoPacientes 
+          pacientes={pacientes}
+        />
     
     </div>
       
