@@ -10,14 +10,12 @@ function App() {
   
   return (
     <div className="container mx-auto mt-20">
-      
       <Header />
-
     <div className="mt-12 md:flex">
         
         <Formulario 
-          pacientes={pacientes} //Esto es un prop 
-          setPacientes={setPacientes} //Esto es un prop
+          pacientes={pacientes} //Esto es una prop 
+          setPacientes={setPacientes} //Esto es una prop
         />
         <ListadoPacientes />
     

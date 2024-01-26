@@ -1,5 +1,8 @@
-import { useState } from "react"
+/* eslint-disable no-unused-vars */
+import { useState, useEffect } from "react"
+import Error from "./Error"
 
+// eslint-disable-next-line react/prop-types
 const Formulario = ({ pacientes, setPacientes }) => {
   const [nombre, setNombre] = useState('')
   const [propietario, setPropietario] = useState('')
@@ -54,11 +57,11 @@ const Formulario = ({ pacientes, setPacientes }) => {
             onSubmit={handleSubmit} 
             className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
 
-                {error && (
-                  <div className="bg-red-600 text-white font-bold uppercase p-3 rounded-md mb-5 text-center">
-                    <p>Todos los campos son obligatorios</p>
-                  </div>
-                )}
+                { error && 
+                  <Error>
+                      <p>Todos los campos son obligatorios</p>
+                  </Error>      
+                }
                 
                 <div className="mb-5">
                   <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">
