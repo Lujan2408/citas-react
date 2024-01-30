@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Paciente from "./Paciente"
 
-const ListadoPacientes = ({pacientes}) => { 
+const ListadoPacientes = ({ pacientes, setPaciente }) => { 
 
   return (
     <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-scroll">
@@ -19,6 +19,7 @@ const ListadoPacientes = ({pacientes}) => {
             <Paciente 
               paciente={paciente}
               key={paciente.id}
+              setPaciente={setPaciente}
             />
           ))}
       </>
