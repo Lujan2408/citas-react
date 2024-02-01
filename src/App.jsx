@@ -6,7 +6,7 @@ import { useState } from "react"
 
 function App() {
 
-  const [pacientes, setPacientes] = useState([])
+  const [ pacientes, setPacientes ] = useState([])
   const [ paciente, setPaciente ] = useState({})
   
   return (
@@ -18,6 +18,7 @@ function App() {
           pacientes={pacientes} //Esto es una prop 
           setPacientes={setPacientes} //Esto es una prop
           paciente={paciente}
+          setPaciente={setPaciente}
         />
         <ListadoPacientes 
           pacientes={pacientes}
