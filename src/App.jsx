@@ -17,6 +17,7 @@ function App() {
         <Formulario 
           pacientes={pacientes} //Esto es una prop 
           setPacientes={setPacientes} //Esto es una prop
+          paciente={paciente}
         />
         <ListadoPacientes 
           pacientes={pacientes}
