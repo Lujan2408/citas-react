@@ -36,6 +36,10 @@ function App() {
         />
     
     </div>
+
+      <div className="text-l text-center pt-16 pb-14">
+        <p>© 2024 Jose David Cardona Luján</p>
+      </div>
       
     </div> 
   )
